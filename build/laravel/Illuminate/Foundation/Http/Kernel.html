@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Illuminate\Foundation\Http\Kernel | Laravel API Documentation</title>
+
+                <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+        <link rel="stylesheet" href="css/laravel.css" />
+        
+    
+    </head>
+
+    <body id="class" data-name="class:Illuminate_Foundation_Http_Kernel" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Laravel API Documentation</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Illuminate.html">Illuminate</a></li>
+                                        <li><a href="../../../Illuminate/Foundation.html">Foundation</a></li>
+                                        <li><a href="../../../Illuminate/Foundation/Http.html">Http</a></li>
+    
+                <li>Kernel</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Kernel</h1>
+    </div>
+
+    <p>    class
+    <strong>Kernel</strong>        implements
+        <a href="../../../Illuminate/Contracts/Http/Kernel.html"><abbr title="Illuminate\Contracts\Http\Kernel">Kernel</abbr></a></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a> $app, <a href="../../../Illuminate/Routing/Router.html"><abbr title="Illuminate\Routing\Router">Router</abbr></a> $router)
+                                            <p>Create a new HTTP kernel instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handle">handle</a>(<a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a> $request)
+                                            <p>Handle an incoming HTTP request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_terminate">terminate</a>(<a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a> $request, <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)
+                                            <p>Call the terminate method on any terminable middleware.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Foundation\Http\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prependMiddleware">prependMiddleware</a>(string $middleware)
+                                            <p>Add a new middleware to beginning of the stack if it does not already exist.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Foundation\Http\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pushMiddleware">pushMiddleware</a>(string $middleware)
+                                            <p>Add a new middleware to end of the stack if it does not already exist.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bootstrap">bootstrap</a>()
+                                            <p>Bootstrap the application for HTTP requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getApplication">getApplication</a>()
+                                            <p>Get the Laravel application instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 63</div>
+        <code>                    void
+    <strong>__construct</strong>(<a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a> $app, <a href="../../../Illuminate/Routing/Router.html"><abbr title="Illuminate\Routing\Router">Router</abbr></a> $router)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new HTTP kernel instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a></td>
+                <td>$app</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Illuminate/Routing/Router.html"><abbr title="Illuminate\Routing\Router">Router</abbr></a></td>
+                <td>$router</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at line 80</div>
+        <code>                    <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a>
+    <strong>handle</strong>(<a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a> $request)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Handle an incoming HTTP request.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_terminate">
+        <div class="location">at line 125</div>
+        <code>                    void
+    <strong>terminate</strong>(<a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a> $request, <a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a> $response)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Call the terminate method on any terminable middleware.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Request.html"><abbr title="Illuminate\Http\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Illuminate/Http/Response.html"><abbr title="Illuminate\Http\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prependMiddleware">
+        <div class="location">at line 164</div>
+        <code>                    <abbr title="Illuminate\Foundation\Http\$this">$this</abbr>
+    <strong>prependMiddleware</strong>(string $middleware)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a new middleware to beginning of the stack if it does not already exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$middleware</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Foundation\Http\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pushMiddleware">
+        <div class="location">at line 180</div>
+        <code>                    <abbr title="Illuminate\Foundation\Http\$this">$this</abbr>
+    <strong>pushMiddleware</strong>(string $middleware)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a new middleware to end of the stack if it does not already exist.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$middleware</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Foundation\Http\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootstrap">
+        <div class="location">at line 195</div>
+        <code>                    void
+    <strong>bootstrap</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Bootstrap the application for HTTP requests.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getApplication">
+        <div class="location">at line 256</div>
+        <code>                    <a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a>
+    <strong>getApplication</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the Laravel application instance.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Illuminate/Contracts/Foundation/Application.html"><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
